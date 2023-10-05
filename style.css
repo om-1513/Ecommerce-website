@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behaviour: smooth;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behaviour: smooth;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+ 
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+    background-color: #d6d3d3;
+    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */    
+    
+}
+.product-img{
+    width: 250px;
+    height: 250px;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+    
+    box-shadow: 0 1px 4px rgba(34, 30, 30, 0.1);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    z-index: 10;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+        list-style: none;
+        /* padding: 0 10px; */
+}
+ul li a{
+    display: block;
+    padding: 18px 51px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 21px 44px -4px -24px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background-color: #adadad;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    height: auto;
+    padding-bottom: 5px;
+}
+ul li a:hover{
+    background-color: #adadad;
+    color: black;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    height: auto;
+}
+ul{
+    list-style: none;
+        display: grid;
+        grid-template-rows: repeat(1, min-content);
+        grid-auto-flow: column;
+        margin-left: 5px;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin: 0 40px;
+    text-decoration: none;
+}
+#cart-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 40px;
+    color: black;
+}
+.section-title{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+section{
+    padding: 4rem 0 3rem;
+    font-weight: 600;
+    text-align: center ;
+}
+.shop{
+    margin-top: 2rem;
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1.5rem;
+    margin-top: 50px;
+}
+.product-box{
+    position: relative;
+}
+
+.prouduct-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
